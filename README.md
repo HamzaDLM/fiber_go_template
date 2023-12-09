@@ -2,14 +2,14 @@
 
 This is the backend part of a full stack template, it uses Go and the Fiber framework.
 
-![Frontend part repository](https://github.com/HamzaDLM/vue_ts_template)
+[Frontend part repository](https://github.com/HamzaDLM/vue_ts_template)
 
 ## Usage
 
 ### Running locally 
 
 To run the example locally, clone the project & use the helper makefile commands:
-```
+```bash
 # clone the project
 git clone https://github.com/HamzaDLM/fiber_go_template
 
@@ -32,14 +32,14 @@ Then you should be able to access the app using the following URLs:
 ### Tests
 
 To run the tests:
-```
+```bash
 go test -v ./...
 ```
 
 ### Documentation
 
 To update the api documentation use the following:
-```
+```bash
 swag init
 ```
 
@@ -48,7 +48,7 @@ swag init
 There is a makefile with helper commands to make life easier:
 
 List available commands
-```
+```bash
 make list
 ```
 
@@ -64,7 +64,7 @@ make list
 
 ## Folder structure
 
-```
+```bash
 .
 ├── config                  # Hold the configuration files of the project 
 ├── container               # Defines data and tools that are attached to most layers (env, logger...)
