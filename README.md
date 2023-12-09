@@ -8,7 +8,7 @@ This is the backend part of a full stack template, it uses Go and the Fiber fram
 
 ### Running locally 
 
-To run the example locally, clone the project & use the helper makefile commands:
+To run the example locally, clone the project & use the following commands:
 ```bash
 # clone the project
 git clone https://github.com/HamzaDLM/fiber_go_template
