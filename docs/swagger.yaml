@@ -1,0 +1,68 @@
+basePath: /api/v1
+host: localhost:6969
+info:
+  contact: {}
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/mit-license.php
+  title: Doc
+  version: 0.0.1
+paths:
+  /employees:
+    get:
+      consumes:
+      - application/json
+      description: Get all employees
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "404":
+          description: Not Found
+          schema:
+            type: string
+      summary: Get all employees
+      tags:
+      - Employees
+  /employees/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Get employee by id
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "404":
+          description: Not Found
+          schema:
+            type: string
+      summary: Get employee by id
+      tags:
+      - Employees
+  /health:
+    get:
+      consumes:
+      - application/json
+      description: Check status of app
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 'healthy: This application is started.'
+          schema:
+            type: string
+        "404":
+          description: 'None: This application is stopped.'
+          schema:
+            type: string
+      summary: Get status of app
+      tags:
+      - Health
+swagger: "2.0"
