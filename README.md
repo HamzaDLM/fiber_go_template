@@ -62,6 +62,24 @@ make list
 | swag  | 1.1.0  |
 | testify | 1.8.4 | 
 
+## Folder structure
+
+```
+.
+├── config                  # Hold the configuration files of the project 
+├── container               # Defines data and tools that are attached to most layers (env, logger...)
+├── controller              # Defines API handlers 
+├── database                # Database abstraction
+├── docs                    # Auto-generated files used by swagger
+├── logger                  # Provides zap logging functionalities 
+├── middleware              # Defining middlewares 
+├── public                  # Where the built frontend 
+├── router                  # Provides routing
+├── tests                   # Unit testing 
+├── main.go                 # Entry point
+├── makefile                # Helper commands
+└── README.md               
+```
 
 ## TODO
 
