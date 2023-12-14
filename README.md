@@ -19,7 +19,7 @@ air -c .air.conf
 # or using docker, build the image
 docker build -t fiber_go_backend .
 
-# and run it 
+# and run it
 docker run -p [host_port]:[container_port] fiber_go_backend
 ```
 
@@ -28,6 +28,13 @@ Then you should be able to access the app using the following URLs:
 - Web: <http://localhost:port/>
 - API: <http://localhost:port/v1/>
 - Doc: <http://localhost:port/v1/docs>
+
+There is a makefile with helper commands to make life easier:
+
+List available commands
+```bash
+make list
+```
 
 ### Tests
 
@@ -41,15 +48,6 @@ go test -v ./...
 To update the api documentation use the following:
 ```bash
 swag init
-```
-
-### Makefile
-
-There is a makefile with helper commands to make life easier:
-
-List available commands
-```bash
-make list
 ```
 
 ## Libraries
@@ -84,5 +82,5 @@ make list
 ## TODO
 
 - [] CORS (not working)
-- [] Deployment files (Docker, K8S, ...)
+- [] Deployment files (K8S, ...)
 - [] Grafana dashboard template for monitoring
